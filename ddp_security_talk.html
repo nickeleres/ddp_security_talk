@@ -1,0 +1,19 @@
+<head>
+  <title>ddp_security_talk</title>
+</head>
+
+<body>
+	{{> loginButtons}}
+  <h1>List of all Users</h1>
+
+</body>
+
+<template name="usersTemplate">
+	<ul>
+		{{#each users}}
+		<li>
+			{{_id}}
+		</li>
+		{{/each}}
+	</ul>
+</template>
