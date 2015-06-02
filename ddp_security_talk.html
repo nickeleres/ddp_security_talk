@@ -12,8 +12,12 @@
 	<ul>
 		{{#each users}}
 		<li>
-			{{_id}}
+			<b> user id:</b> {{_id}} {{#if isAdmin}}/~\~/~\~/~\~/~\ <b>profile created at:</b> {{createdAt}}{{/if}}
 		</li>
 		{{/each}}
 	</ul>
+</template>
+
+<template name='loginTemplate'>
+	<h2>You must log in</h2>
 </template>
