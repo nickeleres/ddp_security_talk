@@ -11,8 +11,13 @@
 <template name="usersTemplate">
 	<ul>
 		{{#each users}}
-		<li>
-			<b> user id:</b> {{_id}} {{#if isAdmin}}/~\~/~\~/~\~/~\ <b>profile created at:</b> {{createdAt}}{{/if}}
+		<li id = 'user_entry'>
+			<b> user id:</b> {{_id}}
+			{{#if isAdmin}} 
+			<ul>
+				<li id = 'user_profile_created_at'><b>profile created at:</b> {{createdAt}}</li>
+			</ul>
+			{{/if}}
 		</li>
 		{{/each}}
 	</ul>

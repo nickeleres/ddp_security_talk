@@ -1,1 +1,9 @@
 /* CSS declarations go here */
+
+#user_entry{
+	margin-top: 1%;
+}
+
+#user_profile_created_at{
+	margin-top: 0.5%;
+}
